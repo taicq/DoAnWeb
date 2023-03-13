@@ -11,7 +11,7 @@ import "./header.css";
 import { DateRange } from "react-date-range";
 import { useState } from "react";
 import "react-date-range/dist/styles.css"; // main css file
-import "react-date-range/dist/theme/default.css";
+import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
 
@@ -79,11 +79,10 @@ const Header = ({ type }) => {
         {type !== "list" && (
           <>
             <h1 className="headerTitle">
-              A lifetime of discounts? It's Genius.
+              Find your next stay
             </h1>
             <p className="headerDesc">
-              Get rewarded for your travels – unlock instant savings of 10% or
-              more with a free Lamabooking account
+              Search deals on hotels, homes, and much more...
             </p>
             <button className="headerBtn">Sign in / Register</button>
             <div className="headerSearch">
@@ -203,4 +202,4 @@ const Header = ({ type }) => {
   );
 };
 
-export default Header
+export default Header;
